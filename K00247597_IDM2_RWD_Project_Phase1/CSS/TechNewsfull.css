@@ -1,0 +1,41 @@
+#TitleT {
+	text-align: center;
+
+}
+
+hr{
+	width:21em;
+}
+
+ .row {
+  display: flex;
+  
+  float; right;
+  
+}
+.row img{
+	border: .25em solid #E4C0D0;
+	display:flex;
+	flex-wrap: wrap;
+}
+.column {
+  flex: 33.33%;
+  padding: 7px, 7px;
+  width: 80%;
+}
+
+#foot{
+	background-color: #DADEDF;
+}
+footer { 
+	border:  2px solid #F2F3F4;
+	background color: #DADEDF;
+	clear: both;
+	padding: 1.5em 2.93%;
+ } 
+footer p {
+	text-align: left;
+    font-size: 100%;
+    color: black;  
+    padding-top: 1%;  
+}

@@ -1,0 +1,58 @@
+#articlehead{
+	text-align: center;
+  padding-top: 5%;
+	font-size: 150%;
+}
+
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  float: center;
+  padding-top: 10%;
+  padding-left: 7%;
+  padding-bottom: 20%;
+  font-size: 120%;
+  flex: 33.33%;
+}
+
+#Thumbnail{
+	border: 1em solid #E4C0D0;
+	display:flex;
+	flex-wrap: wrap;
+
+}
+
+
+.column h3 h4 p{
+padding-top: 2%;
+font-size: 180%;
+padding-bottom: 2%;
+
+}
+#titlesart{
+  width: 90%;
+  
+  background-color: #F2F3F4;
+border: .25em solid #2b2b2b;
+}
+#titlesart h4{
+text-align: center;
+float: center;
+
+}
+
+#titlesart h5{
+  padding-left: 3%;
+}
+
+#text{
+  width: 90%;
+  text-align: center
+  background-color: #F2F3F4;
+   border: .25em solid #E4C0D0;
+}
+
+#text p {
+  margin: 35px;
+}
+
