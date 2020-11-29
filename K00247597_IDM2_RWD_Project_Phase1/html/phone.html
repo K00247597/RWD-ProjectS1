@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
+    <head>
 
-		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Apple Byte News</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apple Byte News</title>
 
-
-
-    	<link rel="stylesheet" href="../CSS/Project.css">
-		<link rel="stylesheet" href="../CSS/slicknav.css">
+        
+         <link rel="stylesheet" href="../CSS/Project.css">
+         <link rel="stylesheet" href="../CSS/TechNewsfull.css">
+        <link rel="stylesheet" href="../CSS/slicknav.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script> 
       <script src="../js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
@@ -18,147 +18,187 @@
             $('#navbar').slicknav({prependTo:"#mobile_menu"});
         });
     </script>
-		</head>
+        </head>
 
 <body>
-	
+   <header> 
 
-<header>	
+    <div id="wrap">
+        
+        <div id="logo">
 
-	<div id="wrap">
-		
-		<div id="logo">
-
-	<a href="index.html"><img src="../Images/Applebyte.png" alt="Apple Byte logo" id="apple"></a>
+    <a href="index.html"><img src="../Images/Applebyte.png" alt="Apple Byte logo" id="apple"></a>
 
 </div>
 <div>
-		<a href="index.html"><h1 id="mainhead">Apple Byte News</h1></a>
+        <a href="index.html"><h1 id="mainhead">Apple Byte News</h1></a>
 
 
 
-			<a href=".html"><img src="../Images/inbox.svg" alt="inbox" id="inbox"></a>
+            <a href=".html"><img src="../Images/inbox.svg" alt="inbox" id="inbox"></a>
 
-			<a href="login.html"><img src="../Images/user-circle.svg" alt="profile" id="profile"></a>
-			
-			
-
-
-			 <input type="text" placeholder="Search..">
+            <a href="login.html"><img src="../Images/user-circle.svg" alt="profile" id="profile"></a>
+            
+            
 
 
-			</div>
+             <input  id="search" type="text" placeholder="Search..">
 
-		</div>
-		</header>
 
-		
+            </div>
+
+        </div>
+        </header>
+
+        
 <nav id="mobile_menu"></nav>
-
-	<nav id="navbar">
-  	    <ul>
-    	    <li><a href="AllTechNews.html" class="current">All Tech News</a></li>
-    	    <li><a href="phone.html">Phone</a>
-    	     <ul>
-    			    <li><a href="apple.html">Apple</a></li>
-    			    <li><a href="Microsoft.html">Microsoft</a></li>
-    			    <li><a href="Samsung.html">Samsung</a></li>
-    			    <li><a href="OtherPhone.html">Other</a></li>
-    		    </ul>
-    		</li>
-    	    <li><a href="computer.html">Computer</a>
-    	    <ul>
-    			    <li><a href="appleCP.html">Apple</a></li>
-    			    <li><a href="MicrosoftCP.html">Microsoft</a></li>
-    			    <li><a href="Dell.html">Samsung</a></li>
-    			    <li><a href="Other.html">Other</a></li>
-    		    </ul>
-    		</li>
-    	    <li><a href="hardware.html"> Tech Hardware</a>
-			<ul>
-    			    <li><a href="CPU.html">CPU</a></li>
-    			    <li><a href="GPU.html">GPU</a></li>
-    			    <li><a href="Storage.html">Storage</a></li>
-    			    <li><a href="Other(Tech).html">Other</a></li>
-    		    </ul>
-    		</li>
-		</ul>
+<nav id="navbar">
+        <ul>
+            <li><a href="index.html" > Home </a></li>
+            <li><a href="AllTechNews.html" >All Tech News</a></li>
+            <li><a href="phone.html" class="current">Phone</a>
+             <ul>
+                    <li><a href="iphone12.html">Apple</a></li>
+                    <li><a href="duo.html">Microsoft</a></li>
+                    <li><a href="Samsung.html">Samsung</a></li>
+                    <li><a href="Oneplus.html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="computer.html">Computer</a>
+            <ul>
+                    <li><a href="intelARM.html">Apple</a></li>
+                    <li><a href="AllTechNews.html">Microsoft</a></li>
+                    <li><a href="AllTechNews.html">Dell</a></li>
+                    <li><a href="launch.html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="hardware.html"> Tech Hardware</a>
+            <ul>
+                    <li><a href="m1.html">CPU</a></li>
+                    <li><a href="intelARM.html">GPU</a></li>
+                    <li><a href="AllTechNews.html">Storage</a></li>
+                    <li><a href="index.html">Other</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
-<div id="carousel">
-	
-	<figure>
-		<img  src="../Images/slider.png" class="img">
-		<img src="../Images/friend.jpg"class="img">
-		<img src="../Images/smooth.jpg"class="img">
-		<img src="../Images/intel.jpg"class="img">
-		<img src="../Images/slider.png"class="img">
-	</figure>
+<div id="fullwrap">
+
+<div id="clockdiv">
+ <h3 id="time"> Time </h3>
+<span id="clock">15:55:01</span> 
+<script>
+
+
+
+function displayTime() {
+    let clock = document.querySelector("#clock"); 
+    let now = new Date();                         
+    clock.textContent = now.toLocaleTimeString(); 
+}
+displayTime()                    
+setInterval(displayTime, 1000);  
+
+</script>
 
 
 </div>
-    <main>
 
-<h3 id="TitleT">Recent Phone News (not completed planning use of javascript)</h3>
+<main>
+
+<div id="titleAT">
+
+<h3 id="TitleT">Phone News </h3>
+
 
 <hr></hr>
-<br>
 
+</div>
 
 <div class="row">
 
   <div class="column">
-    <img src="../Images/ARM.jpeg"  style="width:80%">
 
-    <h3>Apple Launches ARM</h3>
+              <a href="iphone12.html"> <img src="../Images/Iphone.jpg"  style="width:80%"></a> 
 
-    <p>20/11/2020</p>
+<div class="articleTX">
+              
+               <h3>Iphone 12</h3>
+                <h4>20/12/2020</h4>
+            <p>Is it worth the upgrade?</p>
 
-  
+            <h4>by Jane D.</h4>
+</div>
+              
+              <a href="duo.html"> <img src="../Images/duo.jpg"  style="width:80%"></a>
+
+
+<div class="articleTX">
+
+                <h3> What is the Surface duo</h3>
+            <h4>20/11/2020</h4>
+                <p>Will there phones finally be usable?</p>
+            <h4>by Bobby Hall</h4>
+              
+ </div>
+             
+
+
+</div>
+
+<div class="column">
+
+           <a href="samsung.html"> <img src="../Images/Samsung.jpg"  style="width:80%"></a>
+
+
+<div class="articleTX">
+
+               <h3>New Samsung s21 details</h3>
+                <h4>29/11/2020</h4>
+            <p>We may finally know what samsung has instore for us....</p>
+
+            <h4>by Jim P.</h4>
+
+
+</div>
+
  
-    <img src="../Images/mmini.jpg"  style="width:80%">
+          <a href="oneplus.html">  <img src="../Images/oneplus.jpg"  style="width:80%"></a>
 
-   <h3>New Mac Mini</h3>
 
-   <p>20/11/2020</p>
+<div class="articleTX">
+
+            <h3>Underrated phones of 2020</h3>
+        <h4>1/12/2020</h4>
+            <p>Some underrated great phones of 2020...</p>
+
+           <h4> by Jim Hetry</h4>
 
 </div>
-
- <div class="column">
-    <img src="../Images/Air M1.jpeg"  style="width:80%">
-
-    <h3>New Macbook air</h3>
-
-	<p>20/11/2020</p>
-
    
-
-   
-<img src="../Images/mpro.jpg"  style="width:80%">
-
-    <h3>New Macbook Pro</h3>
-
-	<p>20/10/2020</p>
+          
 
 
 </div>
 
 </div>
-
 
 </main>
+</div>
+<div class="ad">
+<a href="https://www.amazon.co.uk/?&tag=googamazkeywi-21&ref=pd_sl_bykrok60k_e&adgrpid=67562192834&hvpone=&hvptwo=&hvadid=323206031670&hvpos=&hvnetw=g&hvrand=16297212636966621955&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20485&hvtargid=kwd-294668576540&hydadcr=8094_1838082&gclid=Cj0KCQiAqo3-BRDoARIsAE5vnaKCS66vEoDvh64y0y_sGgjTU5eNpiMhlruRCAemHYvp5qZQP9KCUNcaAksfEALw_wcB"><img src="../Images/am.jpeg" style="width:50%"></a>
 
-
-<br>
+</div>
 
 <div id="foot">
 <footer>
-	
-<a href="index.html"><img src="../Images/Applebyte.png" alt="Apple Byte logo"></a>	<p>&copy; AppleByte News 2020</p>
+    
+<img src="../Images/Applebyte.png" alt="Apple Byte logo">   
+<div id="footerT">&copy; AppleByte News 2020</div>
 
 </footer>
     </div>
-
 
 </body>
 </html>

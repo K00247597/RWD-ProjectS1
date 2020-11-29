@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
+    <head>
 
-		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Apple Byte News</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apple Byte News</title>
 
-
-
-    	<link rel="stylesheet" href="../CSS/Project.css">
-		<link rel="stylesheet" href="../CSS/slicknav.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/article.css">
+        
+         <link rel="stylesheet" href="../CSS/Project.css">
+         <link rel="stylesheet" href="../CSS/TechNewsfull.css">
+        <link rel="stylesheet" href="../CSS/slicknav.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script> 
       <script src="../js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
@@ -19,11 +18,10 @@
             $('#navbar').slicknav({prependTo:"#mobile_menu"});
         });
     </script>
-		</head>
+        </head>
 
 <body>
-	
-<header>    
+   <header> 
 
     <div id="wrap">
         
@@ -54,11 +52,12 @@
 
         
 <nav id="mobile_menu"></nav>
-<nav id="navbar">
+
+    <nav id="navbar">
         <ul>
             <li><a href="index.html" > Home </a></li>
             <li><a href="AllTechNews.html" >All Tech News</a></li>
-            <li><a href="phone.html" class="current">Phone</a>
+            <li><a href="phone.html" >Phone</a>
              <ul>
                     <li><a href="iphone12.html">Apple</a></li>
                     <li><a href="duo.html">Microsoft</a></li>
@@ -74,7 +73,7 @@
                     <li><a href="launch.html">Other</a></li>
                 </ul>
             </li>
-            <li><a href="hardware.html"> Tech Hardware</a>
+            <li><a href="hardware.html"class="current"> Tech Hardware</a>
             <ul>
                     <li><a href="m1.html">CPU</a></li>
                     <li><a href="intelARM.html">GPU</a></li>
@@ -84,39 +83,116 @@
             </li>
         </ul>
     </nav>
+
+<div id="fullwrap">
+
+<div id="clockdiv">
+ <h3 id="time"> Time </h3>
+<span id="clock">15:55:01</span> 
+<script>
+
+
+
+function displayTime() {
+    let clock = document.querySelector("#clock"); 
+    let now = new Date();                         
+    clock.textContent = now.toLocaleTimeString(); 
+}
+displayTime()                    
+setInterval(displayTime, 1000);  
+
+</script>
+
+
+</div>
+
 <main>
 
-    <div class="row">
+<div id="titleAT">
+
+<h3 id="TitleT">Tech Hardware News </h3>
+
+
+<hr></hr>
+
+</div>
+
+
+<div class="row">
+
+  <div class="column">
+
+              <a href="intelARM.html"> <img src="../Images/intel.jpg"  style="width:80%"></a> 
+
+<div class="articleTX">
+              
+               <h3>Intel vs ARM?</h3>
+                <h4>20/12/2020</h4>
+            <p>Apple vs intel has begun</p>
+
+            <h4>by Janey H.</h4>
+</div>
+              
+              <a href="launch.html"> <img src="../Images/ARM.jpg"  style="width:80%"></a>
+
+
+<div class="articleTX">
+
+                <h3>Apple Launches ARM</h3>
+            <h4>20/11/2020</h4>
+                <p>What is ARM?</p>
+            <h4>by John F.</h4>
+              
+ </div>
+             
+
+
+</div>
+
 <div class="column">
 
-
-    <img id="thumbnail" src="../Images/ARM.jpg"  style="width:90%">
-<div id="titlesart">
-
-<h3 id="articlehead">Apple Launches ARM</h3>
-<h4>By John F.</h4>
-<h5>20/11/2020</h5>
-
-</div>
-
-<div id="text">
-<p>While Apple may be new to computer chips, it’s been making its own processors ever since the original iPad and the iPhone 4. In fact, it’s one of the biggest advantages to Apple’s approach to design: Apple builds the chips, Apple makes the software, and Apple designs the hardware — every part of the process is under Apple’s control. Now, Apple is potentially poised to bring those same benefits to its Macs. After todays launch of ARM we will have to wait and see what is in store for ARM apple.</p>
-
-<p>Apple uses an Arm-based architecture for its A-series chips in the ‌iPhone‌ and ‌iPad‌, and each year, those chips get faster and more efficient. In fact, when introducing the latest A12 and A13 chips, Apple has made it a point to emphasize that these chips are faster than many Intel-based chips in competing devices.</p>
+           <a href="m1.html"> <img src="../Images/chipset.png"  style="width:80%"></a>
 
 
-<p>The Apple A4 is a PoP SoC manufactured by Samsung, the first SoC Apple designed in-house. It combines an ARM Cortex-A8 CPU – also used in Samsung's S5PC110A01 SoC – and a PowerVR SGX 535 graphics processor (GPU), all built on Samsung's 45-nanometer silicon chip fabrication process.</p>
-</div>
+<div class="articleTX">
+
+               <h3>Details on M1 chip</h3>
+                <h4>20/12/2020</h4>
+            <p>Apple has launched there new chipset, what is inside?</p>
+
+            <h4>by Jim P.</h4>
 
 
 </div>
+
+ 
+          <a href="Airm1.html">  <img src="../Images/Air M1.jpeg"  style="width:80%"></a>
+
+
+<div class="articleTX">
+
+            <h3>New Macbook air</h3>
+        <h4>20/11/2020</h4>
+            <p>A brand new air has been released, but what's different</p>
+
+           <h4> by Jimmy mac</h4>
+
 </div>
+   
+           
+
+
+</div>
+
+</div>
+
 </main>
+</div>
+
 <div class="ad">
 <a href="https://www.amazon.co.uk/?&tag=googamazkeywi-21&ref=pd_sl_bykrok60k_e&adgrpid=67562192834&hvpone=&hvptwo=&hvadid=323206031670&hvpos=&hvnetw=g&hvrand=16297212636966621955&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20485&hvtargid=kwd-294668576540&hydadcr=8094_1838082&gclid=Cj0KCQiAqo3-BRDoARIsAE5vnaKCS66vEoDvh64y0y_sGgjTU5eNpiMhlruRCAemHYvp5qZQP9KCUNcaAksfEALw_wcB"><img src="../Images/am.jpeg" style="width:50%"></a>
 
 </div>
-
 <div id="foot">
 <footer>
     
@@ -128,8 +204,3 @@
 
 </body>
 </html>
-
-
-
-
-
