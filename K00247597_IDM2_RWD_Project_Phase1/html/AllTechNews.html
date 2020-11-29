@@ -20,11 +20,8 @@
         </head>
 
 <body>
-    
-
-<header>    
-
-    <div id="wrap">
+    <header>
+<div id="wrap">
         
         <div id="logo">
 
@@ -47,6 +44,8 @@
 
 
             </div>
+
+        </div>
         </header>
 
         
@@ -54,7 +53,8 @@
 
     <nav id="navbar">
         <ul>
-            <li><a href="AllTechNews.html" class="current">All Tech News</a></li>
+            <li><a href="index.html" class="current"> Home </a></li>
+            <li><a href="AllTechNews.html" >All Tech News</a></li>
             <li><a href="phone.html">Phone</a>
              <ul>
                     <li><a href="apple.html">Apple</a></li>
@@ -67,7 +67,7 @@
             <ul>
                     <li><a href="appleCP.html">Apple</a></li>
                     <li><a href="MicrosoftCP.html">Microsoft</a></li>
-                    <li><a href="Dell.html">Samsung</a></li>
+                    <li><a href="Dell.html">Dell</a></li>
                     <li><a href="Other.html">Other</a></li>
                 </ul>
             </li>
@@ -82,10 +82,29 @@
         </ul>
     </nav>
 
-
-
 <div id="fullwrap">
-<main >
+
+<div id="clockdiv">
+ <h3 id="time"> Time </h3>
+<span id="clock">15:55:01</span> 
+<script>
+
+
+
+function displayTime() {
+    let clock = document.querySelector("#clock"); 
+    let now = new Date();                         
+    clock.textContent = now.toLocaleTimeString(); 
+}
+displayTime()                    
+setInterval(displayTime, 1000);  
+
+</script>
+
+
+</div>
+
+<main>
 
 <div id="titleAT">
 
@@ -100,7 +119,7 @@
 
   <div class="column">
 
-                <img src="../Images/intel.jpg"  style="width:80%">
+              <a href="intelARM.html"> <img src="../Images/intel.jpg"  style="width:80%"></a> 
 
 <div class="articleTX">
               
@@ -111,7 +130,7 @@
             <h4>by Janey H.</h4>
 </div>
               
-                <img src="../Images/ARM.jpg"  style="width:80%">
+              <a href="launch.html"> <img src="../Images/ARM.jpg"  style="width:80%"></a>
 
 
 <div class="articleTX">

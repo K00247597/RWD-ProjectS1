@@ -5,16 +5,13 @@
 
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Apple Byte News Log In</title>
+    	<title>Intel vs ARM</title>
 
 
 
     	<link rel="stylesheet" href="../CSS/Project.css">
 		<link rel="stylesheet" href="../CSS/slicknav.css">
-        <link rel="stylesheet" href="../CSS/Login.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
+        <link rel="stylesheet" type="text/css" href="../CSS/article.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script> 
       <script src="../js/jquery.slicknav.min.js"></script>
     <script type="text/javascript">
@@ -47,7 +44,7 @@
             
 
 
-          
+             <input  id="search" type="text" placeholder="Search..">
 
 
             </div>
@@ -60,7 +57,7 @@
 
     <nav id="navbar">
         <ul>
-            <li><a href="index.html"> Home </a></li>
+            <li><a href="index.html" > Home </a></li>
             <li><a href="AllTechNews.html" >All Tech News</a></li>
             <li><a href="phone.html">Phone</a>
              <ul>
@@ -90,64 +87,52 @@
     </nav>
 <main>
 
-<div id="loginwrap">
-<form action="action_page.php" method="post">
-    
-    <h1 id="headlogin">Login</h1>
-
-    <hr></hr>
-
-  <div class="login">
-
-    <div id="form">
-    <label for="uname">Username</label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-<label for="Email"><i class="fas fa-envelope"></i>Email</label>
-    <input type="text" placeholder="Enter Email" name="email" required>  <div id="pwdWrap"> 
-    <i class="fas fa-eye eyeIcon"></i> <label for="psw">Password</label>
-  
-    <input type="password" placeholder="Enter Password" name="psw" required></div>
-</div>
+    <div class="row">
+<div class="column">
 
 
-   
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <img id="thumbnail" src="../Images/intel.jpg"  style="width:90%">
+<div id="titlesart">
 
-  <div class="footer" style="background-color:#f1f1f1">
-   <a href="index.html"> <button type="button" class="cancel" href="index.html">Cancel</button></a>
-    <span class="psw"><a href="#">Forgot password?</a></span>
-  </div>
-</form>
+<h3 id="articlehead">Intel vs ARM?</h3>
+<h4>By Janey H.</h4>
+<h5>20/12/2020</h5>
 
 </div>
 
+<div id="text">
+<p>Intel processors (commonly referred to as X86 in correlation with Windows 32-bit programs) use Complex Instruction Set Computing while ARM uses Reduced Instruction Set Computing. While both perform commands rather quickly in 2020, the former uses slightly more complex instruction with several cycles.</p>
+
+<p>The ARM processors use only one cycle to execute a command, hence, it reduces functions. While the Intel processors use a simpler command code, it must go through several cycles before the action is complete.</p>
+
+
+<p>ARM chips are usually slower than their Intel counterparts. This is largely due to the fact that they are designed to commute with low power consumption. While most users wouldn’t notice a difference in their respective devices, Intel processors are designed for faster computing.</p>
+
+
+<p>At this point, both ARM and Intel processors have their own benefits and drawbacks. Choosing which is better for you heavily depends on what you’d like to do with your tech devices and if they’re compatible with other hardware and software. Intel is faster and more powerful than ARM processors. But, ARM processors are more mobile-friendly than Intel processors (in most cases).</p>
+
+
+</div>
+
+
+</div>
+</div>
 </main>
-<script>
 
-        const visToggle = document.querySelector('.eyeIcon');
 
-        const input = document.querySelector('#pwdWrap input');
-        
-        var password = true;
-        
-       visToggle.addEventListener('click', function(){
-                 if(password) {
-                     input.setAttribute('type','text'); // using js dynamically changed the type attribute
-                     visToggle.classList.remove('fa-eye');
-                     visToggle.classList.add('fa-eye-slash');
-                 } else {
-                     input.setAttribute('type','password');
-                     visToggle.classList.remove('fa-eye-slash');
-                     visToggle.classList.add('fa-eye');
-                 }
-            password = !password;
-              });
+<div id="foot">
+<footer>
+    
+<img src="../Images/Applebyte.png" alt="Apple Byte logo">   
+<div id="footerT">&copy; AppleByte News 2020</div>
 
-        
-    </script>
+</footer>
+    </div>
+
 </body>
 </html>
+
+
+
+
+

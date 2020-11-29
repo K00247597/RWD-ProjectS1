@@ -43,7 +43,7 @@ a {
     font-weight: bold;
 }
 a:hover, a:focus{
-    color: maroon;
+   
 }
 
 
@@ -83,9 +83,10 @@ a:hover, a:focus{
 }
 
 #profile{
-float: right;
+ float: right;
  max-width:5%;  
   max-height: 5%;
+  padding-left: 2%;
 
 
 }
@@ -93,14 +94,17 @@ float: right;
 	float: center;
 	max-width:5%;  
   max-height: 5%;
+ 
   
 }
- #wrap input [type=text]{
-padding-bottom: 10%;
+ #search {
+
+padding-bottom: 0%;
   float: right;
   font-size: 17px;
-  max-width:5%;  
-  max-height: 5%;
+  max-width:20%;  
+  max-height: 10%;
+
 
  }
 header {
@@ -129,7 +133,7 @@ border-bottom: 2px solid #c1c7c9;
 #navbar ul li {
 	width:20%;
     float: right;
-    padding-right: 4%;
+    padding-right: 0%;
 }
 #navbar ul ul {
 	display: none;
@@ -163,7 +167,9 @@ border-bottom: 2px solid #c1c7c9;
 	color: #2B2B2B;
 }
 #navbar ul li a.current {
-	color: black;
+	color: #6f7c80;
+	
+
 }
 #navbar ul li a:hover, #navbar ul li a:focus {
 	background-color: #E4C0D0;
@@ -171,7 +177,7 @@ border-bottom: 2px solid #c1c7c9;
 
 #carousel {
 overflow: hidden;
-padding-top: 13%;
+padding-top: 30%;
 
 }
 
@@ -220,9 +226,25 @@ padding-top: 13%;
 		left: -400%;
 	}
 }
+#clockdiv {
 
+padding-top: 5%;
+text-align: center;
+font-size: 150%;
+font-family: Helvetica, sans-serif;
+font-style: bold;
 
+}
 
+#time{
+ padding-bottom: 1.5%;
+}
+
+#RecentTH{
+
+	padding-bottom: 10%;
+
+}
 
 
 
@@ -246,10 +268,16 @@ hr{
   padding-bottom: 20%;
   font-size: 120%;
 }
-
+.homepageTX{
+	padding-top: 3%;
+	padding-bottom: 10%;
+	margin:20px;
+	width:75%; 
+    word-wrap:break-word;
+}
 .row img{
 	border: .25em solid #E4C0D0;
-	box-shadow: 0px 0px 5px #E4C0D0;
+	box-shadow: 0px 0px 10px #E4C0D0;
 	display:flex;
 	flex-wrap: wrap;
 
@@ -292,7 +320,7 @@ footer {
 	padding: .5em 2.93%;
 	display: inline-flex;
  } 
- 
+
 #footerT{
 	display:inline;
     line-height: 70px;

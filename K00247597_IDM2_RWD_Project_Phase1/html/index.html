@@ -44,7 +44,7 @@
 			
 
 
-			 <input type="text" placeholder="Search..">
+			 <input  id="search" type="text" placeholder="Search..">
 
 
 			</div>
@@ -57,7 +57,8 @@
 
 	<nav id="navbar">
   	    <ul>
-    	    <li><a href="AllTechNews.html" class="current">All Tech News</a></li>
+            <li><a href="index.html" class="current"> Home </a></li>
+    	    <li><a href="AllTechNews.html" >All Tech News</a></li>
     	    <li><a href="phone.html">Phone</a>
     	     <ul>
     			    <li><a href="apple.html">Apple</a></li>
@@ -97,26 +98,50 @@
 
 
 </div>
-    <main>
 
+    <main>
+       
+<div id="clockdiv">
+ <h3 id="time"> Time </h3>
+<span id="clock">15:55:01</span>  <!-- We will insert the time into this element. -->
+<script>
+
+
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+</div>
+
+<div id="RecentTH">
 <h3 id="TitleT">Recent Tech News</h3>
 
 <hr></hr>
-<br>
 
+</div>
 
 <div class="row">
 
   <div class="column">
    <a href="launch.html"> <img  src="../Images/ARM.jpg"  style="width:80%"></a>
-
+<div class="homepageTX">
     <h3>Apple Launches ARM</h3>
 
     <p>20/11/2020</p>
 
   
- 
+ </div>
     <img src="../Images/mmini.jpg"  style="width:80%">
+
+<div class="homepageTX">
 
    <h3>New Mac Mini</h3>
 
@@ -124,22 +149,28 @@
 
 </div>
 
+</div>
+
  <div class="column">
     <img src="../Images/Air M1.jpeg"  style="width:80%">
+
+<div class="homepageTX">
 
     <h3>New Macbook air</h3>
 
 	<p>20/11/2020</p>
 
-   
+   </div>
 
    
 <img src="../Images/mpro.jpg"  style="width:80%">
 
+<div class="homepageTX">
+
     <h3>New Macbook Pro</h3>
 
 	<p>20/10/2020</p>
-
+</div>
 
 </div>
 
