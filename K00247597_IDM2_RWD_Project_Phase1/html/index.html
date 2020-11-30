@@ -103,18 +103,17 @@
        
 <div id="clockdiv">
  <h3 id="time"> Time </h3>
-<span id="clock">15:55:01</span>  <!-- We will insert the time into this element. -->
+<span id="clock">15:55:01</span>  
 <script>
 
 
-// Define a function to display the current time
+
 function displayTime() {
-    let clock = document.querySelector("#clock"); // Get element with id="clock"
-    let now = new Date();                         // Get current time
-    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
-}
-displayTime()                    // Display the time right away
-setInterval(displayTime, 1000);  // And then update it every second. 
+    let clock = document.querySelector("#clock"); 
+    let now = new Date();                         
+    clock.textContent = now.toLocaleTimeString(); 
+displayTime()                    
+setInterval(displayTime, 1000);  
 
 </script>
 
